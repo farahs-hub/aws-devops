@@ -1,0 +1,10 @@
+name: Test Self-Hosted Runner
+on: push
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - run: echo "Hello from k8s-runner-1!"
+      - run: echo "BU-2740 self-hosted runner working!"
+      - run: whoami
+      - run: pwd
